@@ -67,6 +67,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C59C9C54-1163-414E-B582-F2E8010E5FD1}"
 	ProjectSection(SolutionItems) = preProject
 		.clang-format = .clang-format
+		..\.gitignore = ..\.gitignore
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "35. Using Function Pointers", "..\35. Using Function Pointers\35. Using Function Pointers.vcxproj", "{874DB60A-8142-4CDA-A8E9-3D1ECA1D1BE1}"
