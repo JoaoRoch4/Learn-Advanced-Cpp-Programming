@@ -3,9 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
-*.vcxproj
-*.conan
-*.vcxproj.filters
+.vcxproj
+.conan
+.vcxproj.filters
 
 # User-specific files
 *.rsuser

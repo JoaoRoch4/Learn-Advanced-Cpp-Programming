@@ -7,9 +7,18 @@ class Parent {
 
 public:
 
-    void print() {
+    Parent(){};
+    
+    Parent(const Parent &other){
+    
+        std::cout << "Copy parent\n";
+    }
+
+    virtual void print() {
         std::cout << "parent\n";
     }
+
+    virtual ~Parent(){};
 };
 
 class Child : public Parent {
@@ -23,7 +32,12 @@ public:
 
 int main() {
     
+    Child c1;
+    Parent &p1 = c1;
+    p1.print();
 
+    Parent p2 = Child();
+    p2.print();
 
     std::cin.get();
     return 0;
