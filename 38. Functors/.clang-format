@@ -1,17 +1,72 @@
 # Format Style Options - Created with Clang Power Tools
 ---
-AccessModifierOffset: -4
 
-AlignArrayOfStructures: Left
 
-AlignConsecutiveAssignments:
+
+#//  undone
+
+AlignConsecutiveMacros: 
     Enabled: true
     AcrossEmptyLines: false
     AcrossComments: true
     AlignCompound: true
     PadOperators: true
 
-AlignConsecutiveMacros: 
+AlignConsecutiveTableGenBreakingDAGArgColons:
+  Enabled: true
+  AcrossEmptyLines: true
+  AcrossComments: false
+
+AttributeMacros:
+ - __capability
+
+BraceWrapping: 
+    AfterCaseLabel: false
+    AfterClass: false
+    AfterControlStatement: false
+    AfterEnum: false
+    AfterFunction: false
+    AfterNamespace: false
+    AfterObjCDeclaration: false
+    AfterStruct: false
+    AfterUnion: false
+    AfterExternBlock: false
+    BeforeCatch: false
+    BeforeElse: false
+    IndentBraces: false
+    SplitEmptyFunction: false
+    SplitEmptyRecord: false
+    SplitEmptyNamespace: false
+    BeforeLambdaBody: false
+    BeforeWhile: false
+
+ForEachMacros: 
+  - foreach
+  - Q_FOREACH
+  - BOOST_FOREACH
+
+IntegerLiteralSeparator:
+    Binary: 3
+    Decimal: 3
+    DecimalMinDigits: 4
+    Hex: 0
+
+SpaceBeforeParensOptions:
+
+    AfterControlStatements: true
+    AfterForeachMacros: true
+    AfterFunctionDeclarationName: false
+    AfterFunctionDefinitionName: false
+    AfterIfMacros: true 
+    AfterOverloadedOperator: true
+    AfterRequiresInClause: false
+    AfterRequiresInExpression: false
+    BeforeNonEmptyParentheses: false
+  
+AccessModifierOffset: -4
+AlignAfterOpenBracket: DontAlign
+AlignArrayOfStructures: Left
+AlignConsecutiveAssignments:
     Enabled: true
     AcrossEmptyLines: false
     AcrossComments: true
@@ -32,62 +87,36 @@ AlignConsecutiveDeclarations:
     AlignCompound: true
     PadOperators: true
 
-AllowShortLoopsOnASingleLine: true
-AllowShortCompoundRequirementOnASingleLine: true
-AlignAfterOpenBracket: DontAlign
 AlignEscapedNewlines: Right
 AlignOperands: AlignAfterOperator   
-AlignTrailingComments: false
+AlignTrailingComments: 
+    Kind: Always
+    OverEmptyLines: 2
 
 AllowAllArgumentsOnNextLine: true 
 AllowAllConstructorInitializersOnNextLine: true
 AllowAllParametersOfDeclarationOnNextLine: true
 AllowShortBlocksOnASingleLine: Empty
 AllowShortCaseLabelsOnASingleLine: true
+AllowShortCompoundRequirementOnASingleLine: true
 AllowShortEnumsOnASingleLine: true
 AllowShortFunctionsOnASingleLine: true
 AllowShortIfStatementsOnASingleLine: AllIfsAndElse 
 AllowShortLambdasOnASingleLine: true
-
+AllowShortLoopsOnASingleLine: true
 AlwaysBreakAfterDefinitionReturnType: None
 AlwaysBreakAfterReturnType: None
 AlwaysBreakBeforeMultilineStrings: false
 AlwaysBreakTemplateDeclarations: No
-
-
-AttributeMacros: 
-  - __capability
-
 BasedOnStyle: Microsoft
 BinPackArguments: true
 BinPackParameters: true
 BitFieldColonSpacing: Both
-
-BreakBeforeBraces: Custom
-BraceWrapping: 
-  AfterCaseLabel: false
-  AfterClass: false
-  AfterControlStatement: false
-  AfterEnum: false
-  AfterFunction: false
-  AfterNamespace: false
-  AfterObjCDeclaration: false
-  AfterStruct: false
-  AfterUnion: false
-  AfterExternBlock: false
-  BeforeCatch: false
-  BeforeElse: false
-  IndentBraces: false
-  SplitEmptyFunction: false
-  SplitEmptyRecord: false
-  SplitEmptyNamespace: false
-  BeforeLambdaBody: false
-  BeforeWhile: false
-
 BreakAfterAttributes: Never 
 BreakAfterJavaFieldAnnotations: false
 BreakArrays: false
 BreakBeforeBinaryOperators: All
+BreakBeforeBraces: Custom
 BreakBeforeConceptDeclarations: false
 BreakBeforeInheritanceComma: true
 BreakBeforeInlineASMColon: Never
@@ -95,50 +124,38 @@ BreakBeforeTernaryOperators: false
 BreakConstructorInitializers: BeforeComma
 BreakInheritanceList: AfterColon
 BreakStringLiterals: false
+ColumnLimit: 100
 ConstructorInitializerAllOnOneLineOrOnePerLine: true
 ConstructorInitializerIndentWidth : 1
 ContinuationIndentWidth: 2
 Cpp11BracedListStyle: true
 DeriveLineEnding: true
-ColumnLimit: 100
-
 DerivePointerAlignment: false
-EmptyLineBeforeAccessModifier: Always
 EmptyLineAfterAccessModifier : Always
+EmptyLineBeforeAccessModifier: Always
 ExperimentalAutoDetectBinPacking: false
 FixNamespaceComments: false
-
-ForEachMacros: 
-  - foreach
-  - Q_FOREACH
-  - BOOST_FOREACH
-
 IncludeBlocks: Preserve
 IndentCaseBlocks: false
 IndentCaseLabels: true
-IndentExternBlock: NoIndent
+IndentExternBlock: Indent
 IndentGotoLabels: true
 IndentPPDirectives: None
 IndentRequires: true
 IndentWidth: 4
 IndentWrappedFunctionNames: true
-
-IntegerLiteralSeparator:
-    Binary: 3
-    Decimal: 3
-    DecimalMinDigits: 4
-    Hex: 0
-
 Language: Cpp
 LineEnding: CRLF
 MaxEmptyLinesToKeep: 1
 NamespaceIndentation: All
-
+PackConstructorInitializers: NextLine
+PenaltyBreakAssignment: 2
 PointerAlignment: Right
-
-SortIncludes: false
-SortUsingDeclarations: false
-SpaceAfterCStyleCast: false
+QualifierAlignment : Left
+RequiresExpressionIndentation: OuterScope
+SortIncludes: true
+SortUsingDeclarations: LexicographicNumeric
+SpaceAfterCStyleCast: true
 SpaceAfterLogicalNot: false
 SpaceAfterTemplateKeyword: false
 SpaceAroundPointerQualifiers: After
@@ -147,21 +164,8 @@ SpaceBeforeCaseColon: true
 SpaceBeforeCpp11BracedList: true
 SpaceBeforeCtorInitializerColon: true
 SpaceBeforeInheritanceColon: true
-
+SpaceBeforeJsonColon: true
 SpaceBeforeParens: Custom
-SpaceBeforeParensOptions:
-
-    AfterControlStatements: true
-    AfterForeachMacros: true
-    AfterFunctionDeclarationName: false
-    AfterFunctionDefinitionName: false
-    AfterIfMacros: true 
-    AfterOverloadedOperator: true
-    AfterRequiresInClause: false
-    AfterRequiresInExpression: false
-    BeforeNonEmptyParentheses: false
-
-RequiresExpressionIndentation: OuterScope
 SpaceBeforeRangeBasedForLoopColon: true
 SpaceBeforeSquareBrackets: true
 SpaceInEmptyBlock: false
@@ -172,22 +176,19 @@ SpacesInContainerLiterals: false
 SpacesInCStyleCastParentheses: false
 SpacesInParentheses: false
 SpacesInSquareBrackets: false
-Standard: c++20
-PackConstructorInitializers: NextLine
-PenaltyBreakAssignment: 2
-
-
-AlignConsecutiveTableGenBreakingDAGArgColons:
-  Enabled: true
-  AcrossEmptyLines: true
-  AcrossComments: false
-
-QualifierAlignment : Left
-
+Standard: Latest
 TabWidth : 4
-UseCRLF: true
-UseTab: Never
+TableGenBreakingDAGArgOperators: [ins, outs]
+#TemplateNames: 
+#  -pure_virtual
 
+#TypeNames:
+#TypenameMacros:
+# Deprecated UseCRLF: true
+UseTab: Always
+VerilogBreakBetweenInstancePorts: false
+WhitespaceSensitiveMacros: [STRINGIZE, 
+    PP_STRINGIZE, UCLASS, UPROPERTY, UENUM]
 
 
 ...

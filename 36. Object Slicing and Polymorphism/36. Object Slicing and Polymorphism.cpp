@@ -5,12 +5,18 @@
 
 class Parent {
 
+private:
+
+    int one;
+
 public:
 
-    Parent(){};
-    
-    Parent(const Parent &other){
-    
+    Parent(): one(1) {};
+
+    Parent(const Parent &other) {
+
+        one = other.one;
+
         std::cout << "Copy parent\n";
     }
 
@@ -18,20 +24,27 @@ public:
         std::cout << "parent\n";
     }
 
-    virtual ~Parent(){};
+    virtual ~Parent() {};
 };
 
 class Child : public Parent {
 
+private:
+
+    int two;
+
 public:
+
+    Child(): two(2) {};
 
     void print() {
         std::cout << "child\n";
     }
+
 };
 
 int main() {
-    
+
     Child c1;
     Parent &p1 = c1;
     p1.print();
