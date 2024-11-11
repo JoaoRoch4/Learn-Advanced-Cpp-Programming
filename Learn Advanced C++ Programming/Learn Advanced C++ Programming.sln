@@ -68,6 +68,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.clang-format = .clang-format
 		..\.gitignore = ..\.gitignore
+		Learn Advanced C++ Programming.vsext = Learn Advanced C++ Programming.vsext
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "35. Using Function Pointers", "..\35. Using Function Pointers\35. Using Function Pointers.vcxproj", "{874DB60A-8142-4CDA-A8E9-3D1ECA1D1BE1}"
@@ -77,6 +78,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "37. Abstract Classes and Pure Virtual Functions", "..\37. Abstract Classes and Pure Virtual Functions\37. Abstract Classes and Pure Virtual Functions.vcxproj", "{4B4727AA-1DF8-4DFF-B044-516E4D6E6511}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "38. Functors", "..\38. Functors\38. Functors.vcxproj", "{CFB1CDA2-F8A1-4401-99BD-AB27C4B51BD9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "39. Decltype, Typeid and Name Mangling", "..\39. Decltype, Typeid and Name Mangling\39. Decltype, Typeid and Name Mangling.vcxproj", "{5098AC0B-B4F7-4064-8D45-3D1EE5F71D62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -366,6 +369,14 @@ Global
 		{CFB1CDA2-F8A1-4401-99BD-AB27C4B51BD9}.Release|x64.Build.0 = Release|x64
 		{CFB1CDA2-F8A1-4401-99BD-AB27C4B51BD9}.Release|x86.ActiveCfg = Release|Win32
 		{CFB1CDA2-F8A1-4401-99BD-AB27C4B51BD9}.Release|x86.Build.0 = Release|Win32
+		{5098AC0B-B4F7-4064-8D45-3D1EE5F71D62}.Debug|x64.ActiveCfg = Debug|x64
+		{5098AC0B-B4F7-4064-8D45-3D1EE5F71D62}.Debug|x64.Build.0 = Debug|x64
+		{5098AC0B-B4F7-4064-8D45-3D1EE5F71D62}.Debug|x86.ActiveCfg = Debug|Win32
+		{5098AC0B-B4F7-4064-8D45-3D1EE5F71D62}.Debug|x86.Build.0 = Debug|Win32
+		{5098AC0B-B4F7-4064-8D45-3D1EE5F71D62}.Release|x64.ActiveCfg = Release|x64
+		{5098AC0B-B4F7-4064-8D45-3D1EE5F71D62}.Release|x64.Build.0 = Release|x64
+		{5098AC0B-B4F7-4064-8D45-3D1EE5F71D62}.Release|x86.ActiveCfg = Release|Win32
+		{5098AC0B-B4F7-4064-8D45-3D1EE5F71D62}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
