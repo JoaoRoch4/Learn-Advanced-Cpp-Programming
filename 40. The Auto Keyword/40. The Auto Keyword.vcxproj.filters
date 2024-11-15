@@ -22,9 +22,4 @@
   <ItemGroup>
     <None Include=".clang-format" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="MyTypes.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-  </ItemGroup>
 </Project>

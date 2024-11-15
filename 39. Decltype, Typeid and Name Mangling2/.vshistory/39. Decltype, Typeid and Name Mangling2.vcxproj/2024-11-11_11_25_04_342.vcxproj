@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9318b3ad-56a5-42e9-9900-9b9c1af3c205}</ProjectGuid>
-    <RootNamespace>BoilerPlate1</RootNamespace>
+    <ProjectGuid>{4eba434f-8007-47eb-89be-3275c279dcaf}</ProjectGuid>
+    <RootNamespace>_39__Decltype__Typeid_and_Name_Mangling2</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>BoilerPlate1</ProjectName>
+    <ProjectName>BoilerPlate</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -105,8 +105,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
-      <LanguageStandard_C>stdclatest</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,9 +132,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".clang-format" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="MyTypes.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
