@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 #define NOMINMAX
 
@@ -12,7 +12,6 @@
 #define wout std::wcout
 #define in   std::cin
 #define win  std::wcin
-
 #define setUTF8()                                                                                  \
     setlocale(LC_ALL, "");                                                                         \
     SetConsoleOutputCP(CP_UTF8)

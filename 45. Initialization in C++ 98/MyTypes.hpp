@@ -4,15 +4,15 @@
 
 #include <iostream>
 #include <string>
-
-#include <Windows.h>
 #include <vector>
 
-#define out  std::cout
-#define wout std::wcout
-#define in   std::cin
-#define win  std::wcin
+#include <Windows.h>
 
+//
+//#define out  std::cout
+//#define wout std::wcout
+//#define in   std::cin
+//#define win  std::wcin
 #define setUTF8()                                                                                  \
     setlocale(LC_ALL, "");                                                                         \
     SetConsoleOutputCP(CP_UTF8)

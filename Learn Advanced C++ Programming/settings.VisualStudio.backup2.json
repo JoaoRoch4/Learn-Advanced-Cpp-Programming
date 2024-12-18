@@ -1,0 +1,12 @@
+/* Visual Studio Settings File */
+{
+  "debugging.hotReload.enableHotReload": true,
+  "debugging.hotReload.applyOnFileSave": true,
+	"debugging.hotReload.applyOnChanges": true,
+  // require source files to match 
+  "debugging.hotReload.requireMatchingRuntimeVersion": true,
+  "debugging.general.useGcmSourceLinkAuthFallback": true,
+  "projectsAndSolutions.aspNetCore.general.hotReloadCssChanges": true,
+  "debugging.general.useDocumentChecksums": true,
+  "debugging.general.loadDllExports": true
+}

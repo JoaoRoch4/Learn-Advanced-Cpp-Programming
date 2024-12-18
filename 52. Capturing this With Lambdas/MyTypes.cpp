@@ -3,9 +3,10 @@
 // clang-format off
 
 
+
 void headerShow() noexcept {
 
-    char Msg[] {
+    const char *Msg {
 
       "——————————————————————————————————————————————————————————————————————————————————————————"
       "——————————————————————————|\n|"
@@ -34,7 +35,7 @@ void headerShow(const bool &show) noexcept {
 
     if (!show) return;
 
-    char Msg[] {
+    const char *Msg {
 
       "——————————————————————————————————————————————————————————————————————————————————————————"
       "——————————————————————————|\n|"
@@ -60,4 +61,5 @@ void headerShow(const bool &show) noexcept {
 }
 
 // clang-format on
+
 
