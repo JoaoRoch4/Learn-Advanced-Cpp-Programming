@@ -27,7 +27,5 @@ Test &Test::operator=(const Test &other) {
 }
 
 std::ostream &operator<<(std::ostream &out, const Test &test) {
-
-	out << test.id << " : " << test.name;
 	return out;
 }
