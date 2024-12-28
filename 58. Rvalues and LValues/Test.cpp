@@ -1,4 +1,4 @@
-#include "Test.hpp"
+﻿#include "Test.hpp"
 #include "termcolor.hpp"
 
 #include <cstdint>
@@ -73,54 +73,7 @@ void Test::show(const std::string &name, const Test *ptr, bool isSmartPtr,
     const int         &Val {(isNullptr) ? (0) : (ptr->getVal())};
     const std::string &Word {(isNullptr) ? ("") : (ptr->getWord())};
     const double      &Real {(isNullptr) ? (0.0) : (ptr->getReal())};
-
-    auto &ColorRed = std::cout << termcolor::red;
-
-    struct Reset {
-        Reset() { std::cout << termcolor::reset; }
-        std::string operator()() { return ""; }
-    } reset;
-
-    auto PrintPtr = [&](const Test &txt, bool Reset = false) -> std::string {
-        if (isNullptr) {
-
-            std::cout << termcolor::red << txt;
-            if (Reset) reset();
-
-        } else {
-
-            std::cout << termcolor::blue << txt;
-            if (Reset) reset();
-        }
-
-        return "";
-    };
-
-    auto PrintName = [&](const std::string &Name, bool Reset = false) -> std::string {
-        if (isNullptr) {
-            std::cout << termcolor::red << name;
-            if (Reset) reset();
-
-        } else {
-            std::cout << termcolor::blue << name;
-            if (Reset) reset();
-        }
-
-        return "";
-    };
-
-    auto ChangeColor = [&](const std::string &txt, std::basic_ostream<CharT> &,
-                         bool                 Reset = false) -> std::string {
-        if (isNullptr) {
-            std::cout << color.str() << txt;
-            if (Reset) reset();
-        } else {
-            std::cout << color.str() << txt;
-            if (Reset) reset();
-        }
-        return "";
-    };
-
+   
     std::cout << '\n'
               << PrintName("Smart", false) << type << " pointer: " << name << ": \n"
               << "Pointer address: " << PrintPtr(&ptr) << '\n'

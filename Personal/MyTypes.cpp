@@ -1,5 +1,8 @@
+#include "MyTypes.hpp"
+
 // clang-format off
-import std.compat;
+
+
 
 void headerShow() noexcept {
 
@@ -25,7 +28,7 @@ void headerShow() noexcept {
       "\n|—————————————————————————————————————————————————————————————————————————————————"
       "——————————————————————————————————|\n\n"
     };
-    std::cout << Msg;
+    out << Msg;
 }
 
 void headerShow(const bool &show) noexcept {
@@ -58,4 +61,5 @@ void headerShow(const bool &show) noexcept {
 }
 
 // clang-format on
+
 

@@ -1,4 +1,5 @@
 #include "Colors.hpp"
+#include "termcolor.hpp"
 
 std::ostream &Colors::ChangeColor(const ColorEnum &color) noexcept {
 

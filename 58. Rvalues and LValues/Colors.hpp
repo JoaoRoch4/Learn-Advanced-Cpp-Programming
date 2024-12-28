@@ -1,7 +1,5 @@
 #pragma once
 
-#include "Test.hpp"
-
 #ifdef _WIN32
 #define NOMINMAX
 #include <Windows.h>
@@ -36,7 +34,7 @@ enum class ColorEnum {
     bright_white
 };
 
-class Colors : public Test {
+class Colors {
 
     ColorEnum   color;
 
